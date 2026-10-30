@@ -1,0 +1,59 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.indexBtn {
+  position: relative;
+  width: 100vw;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.idle {
+    width: 100vw;
+    height: auto;
+    z-index: -1;
+}
+
+.run {
+    width: 100vw;
+    height: auto;
+}
+
+.explode {
+    width: 100vw;
+    height: auto;
+}
+
+.text {
+    position: center;
+    left: 50px;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row {
+  display: flex;
+  z-index: 2;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
